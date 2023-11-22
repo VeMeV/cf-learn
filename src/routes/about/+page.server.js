@@ -3,4 +3,5 @@ export async function load() {
     return {};
 };
 
-export const ssr = true;
+// export const prerender = true;
+export const csr = false;

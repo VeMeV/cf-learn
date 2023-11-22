@@ -1,13 +1,13 @@
 <script>
-    /** @type {import('./$types').LayoutData} */
-    // export let data;
+	/** @type {import('./$types').LayoutData} */
+	// export let data;
+	import '../app.css';
 </script>
 
+<slot />
 
-<slot/>
-
-<ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/contact">Contact</a></li>
-</ul>
+<div class="flex m-auto justify-evenly">
+	<a href="/" class="bg-blue-500 hover:bg-blue-400 text-white font-bold my-5 py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">Home</a>
+	<a href="/about" class="bg-blue-500 hover:bg-blue-400 text-white font-bold my-5 py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">About</a>
+	<a href="/contact" class="bg-blue-500 hover:bg-blue-400 text-white font-bold my-5 py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">Contact</a>
+</div>
